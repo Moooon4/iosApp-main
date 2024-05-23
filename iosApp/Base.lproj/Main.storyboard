@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iosApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="58N-jP-iPi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NVG-wv-s9V">
+                                <rect key="frame" x="20" y="183" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wBo-Nd-1JT">
+                                <rect key="frame" x="20" y="266" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWC-Pi-anC">
+                                <rect key="frame" x="146" y="373" width="122" height="30"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="C7I-t2-XmA"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="Entrar/Registrarse">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="opaqueSeparatorColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="entrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cjm-Cc-jU1"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NCh-kf-8Ni">
+                                <rect key="frame" x="20" y="87" width="374" height="32"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <segments>
+                                    <segment title="Inicio"/>
+                                    <segment title="Registro"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7GV-hI-Ggf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KWC-Pi-anC" firstAttribute="leading" secondItem="7GV-hI-Ggf" secondAttribute="leading" constant="146" id="1Vw-eg-kMi"/>
+                            <constraint firstItem="NVG-wv-s9V" firstAttribute="leading" secondItem="wBo-Nd-1JT" secondAttribute="leading" id="39y-bc-2Qm"/>
+                            <constraint firstItem="NVG-wv-s9V" firstAttribute="leading" secondItem="58N-jP-iPi" secondAttribute="leadingMargin" id="9ke-px-gKl"/>
+                            <constraint firstItem="KWC-Pi-anC" firstAttribute="centerX" secondItem="wBo-Nd-1JT" secondAttribute="centerX" id="CQr-fB-GBa"/>
+                            <constraint firstItem="KWC-Pi-anC" firstAttribute="top" secondItem="wBo-Nd-1JT" secondAttribute="bottom" constant="73" id="FKg-Xs-w2Y"/>
+                            <constraint firstItem="KWC-Pi-anC" firstAttribute="centerX" secondItem="NVG-wv-s9V" secondAttribute="centerX" id="IDm-oP-Wui"/>
+                            <constraint firstItem="7GV-hI-Ggf" firstAttribute="bottom" secondItem="KWC-Pi-anC" secondAttribute="bottom" constant="313" id="Nif-HM-6LB"/>
+                            <constraint firstItem="NVG-wv-s9V" firstAttribute="top" secondItem="NCh-kf-8Ni" secondAttribute="bottom" constant="65" id="Vz9-1G-K3Y"/>
+                            <constraint firstItem="KWC-Pi-anC" firstAttribute="centerX" secondItem="NCh-kf-8Ni" secondAttribute="centerX" id="gdD-J3-det"/>
+                            <constraint firstItem="wBo-Nd-1JT" firstAttribute="top" secondItem="NVG-wv-s9V" secondAttribute="bottom" constant="49" id="lDh-Xc-aMt"/>
+                            <constraint firstItem="KWC-Pi-anC" firstAttribute="centerX" secondItem="58N-jP-iPi" secondAttribute="centerX" id="laW-Ug-6MX"/>
+                            <constraint firstItem="NVG-wv-s9V" firstAttribute="leading" secondItem="NCh-kf-8Ni" secondAttribute="leading" id="tiS-IF-BmL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yr1-VC-jPD"/>
+                    <connections>
+                        <outlet property="control" destination="NCh-kf-8Ni" id="b6Z-sQ-Fct"/>
+                        <outlet property="correo" destination="NVG-wv-s9V" id="Qna-md-Q4l"/>
+                        <outlet property="password" destination="wBo-Nd-1JT" id="640-or-FUy"/>
+                        <segue destination="eKm-gY-AZT" kind="show" identifier="Inicio" id="0Lu-VP-wPf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="57.065217391304351"/>
+        </scene>
+        <!--Inicio View Controller-->
+        <scene sceneID="axr-V4-7q5">
+            <objects>
+                <viewController id="eKm-gY-AZT" customClass="InicioViewController" customModule="iosApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="DOT-7h-pqv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHs-qj-LEy">
+                                <rect key="frame" x="120" y="395" width="175" height="30"/>
+                                <state key="normal" title="Salir"/>
+                                <connections>
+                                    <action selector="salir:" destination="eKm-gY-AZT" eventType="touchUpInside" id="RRx-zZ-RvF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aaU-bU-OWa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WHs-qj-LEy" firstAttribute="top" secondItem="aaU-bU-OWa" secondAttribute="top" constant="395" id="Xh7-bj-D3x"/>
+                            <constraint firstItem="aaU-bU-OWa" firstAttribute="trailing" secondItem="WHs-qj-LEy" secondAttribute="trailing" constant="119" id="bZ0-ta-2xY"/>
+                            <constraint firstItem="WHs-qj-LEy" firstAttribute="leading" secondItem="aaU-bU-OWa" secondAttribute="leading" constant="120" id="ipL-ps-xy0"/>
+                            <constraint firstItem="aaU-bU-OWa" firstAttribute="bottom" secondItem="WHs-qj-LEy" secondAttribute="bottom" constant="360" id="kT4-FE-Qja"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tic-MZ-pky"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="login" id="zEd-yU-1E8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OFR-rI-9WK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="931.88405797101461" y="56.919642857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
