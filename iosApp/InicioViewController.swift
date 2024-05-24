@@ -47,7 +47,7 @@ class InicioViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
 
     @IBAction func guardar(_ sender: UIButton){
         guard let id = ref.childByAutoId().key else {
-            print("Error: No se pudo obtener el ID")
+            print("Error: No se pudo obtener el ID en la base")
             return
         }
         
